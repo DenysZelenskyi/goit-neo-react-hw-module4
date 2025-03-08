@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #bce1ff;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 4px;
+  max-width: 100%;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
