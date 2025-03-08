@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { quantum } from "ldrs";
 import styles from "./Loader.module.css";
 
-// Регистрируем loader перед использованием
 quantum.register();
 
 const Loader = () => {

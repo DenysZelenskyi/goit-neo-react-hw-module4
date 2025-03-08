@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Modal from "react-modal";
 import styles from "./ImageModal.module.css";
 
-Modal.setAppElement("#root"); // Указываем корневой элемент приложения
+Modal.setAppElement("#root");
 
 const ImageModal = ({ isOpen, onClose, image }) => {
   useEffect(() => {

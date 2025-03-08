@@ -8,10 +8,7 @@ const ImageGallery = ({ images, onImageClick }) => {
   return (
     <ul className={styles.gallery}>
       {images.map((image) => (
-        <li
-          key={image.id}
-          onClick={() => onImageClick && onImageClick(image)} // Проверяем наличие `onImageClick`
-        >
+        <li key={image.id} onClick={() => onImageClick && onImageClick(image)}>
           <ImageCard image={image} />
         </li>
       ))}

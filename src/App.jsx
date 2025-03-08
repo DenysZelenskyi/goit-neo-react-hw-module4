@@ -1,12 +1,12 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import SearchBar from "./Components/SearchBar/SearchBar";
-import ImageGallery from "./Components/ImageGallery/ImageGallery";
-import ErrorMessage from "./Components/ErrorMessage/ErrorMessage";
-import Loader from "./Components/Loader/Loader";
-import LoadMoreBtn from "./Components/LoadMoreBtn/LoadMoreBtn";
-import ImageModal from "./Components/ImageModal/ImageModal";
+import SearchBar from "./components/SearchBar/SearchBar";
+import ImageGallery from "./components/ImageGallery/ImageGallery";
+import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
+import Loader from "./components/Loader/Loader";
+import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
+import ImageModal from "./components/ImageModal/ImageModal";
 import { fetchImages } from "./api/unsplash";
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
   }, [query, page]);
 
   const handleImageClick = (image) => {
-    if (!image) return; // Проверка, чтобы избежать ошибок
+    if (!image) return;
     setSelectedImage(image);
     setModalIsOpen(true);
   };

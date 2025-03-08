@@ -16,7 +16,7 @@ export const fetchImages = async (query, page = 1) => {
 
     return data.results;
   } catch (error) {
-    console.error("Ошибка при загрузке изображений:", error);
+    console.error("Error loading images:", error);
     return [];
   }
 };
